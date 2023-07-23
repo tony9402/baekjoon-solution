@@ -1,4 +1,3 @@
-// Copyright [2023] tony9402.
 #include<bits/stdc++.h>
 
 int main() {
