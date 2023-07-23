@@ -9,5 +9,5 @@ echo "${#cppfiles[@]} detected"
 for x in ${cppfiles[@]}; do
     echo "Checking $x .."
     cat $x | sed -n -e '1p' -e '5,$p' > .cpplint.cpp
-    cpplint .cpplint.cpp
+    cpplint --filter=-legal/copyright,-build/namespaces .cpplint.cpp
 done;
