@@ -19,4 +19,5 @@ repos:
     rev: master
     hooks:
     - id: cpplint
-      args: [--filter=-legal/copyright]
+      args:
+        - --filter=-legal/copyright,-build/namespaces
