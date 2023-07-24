@@ -8,7 +8,7 @@ int main() {
 
     int N; cin >> N;
     int L = 1, R = 2;
-    while (L > N || N >= R) L *= 2, R *= 2;
+    while (N >= R) L *= 2, R *= 2;
     cout << L;
 
     return 0;
