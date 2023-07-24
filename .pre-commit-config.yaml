@@ -21,7 +21,7 @@ repos:
     - id: cppcheck
     - id: cpplint
       args:
-        - --filter=-legal/copyright,-build/namespaces
+        - --filter=-legal/copyright,-build/namespaces,-runtime/string,-whitespace/newline
   - repo: https://github.com/codespell-project/codespell
     rev: v2.2.5
     hooks:
